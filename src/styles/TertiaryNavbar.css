@@ -1,0 +1,55 @@
+.tertiary-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF; /* White */
+  padding: 10px 20px;
+}
+
+.tertiary-navbar .nav-links a,
+.tertiary-navbar .nav-links .nav-link {
+  color: #002855; /* Dark Blue */
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.tertiary-navbar .nav-links a:hover,
+.tertiary-navbar .nav-links .nav-link:hover {
+  text-decoration: none;
+  background-color: rgba(179, 163, 105, 0.2); /* Light gold highlight with transparency */
+  color: #EAAA00; /* Gold lettering */
+  border-radius: 5px; /* Optional: Adds rounded corners for a smoother look */
+  padding: 5px 10px; /* Optional: Creates space around the text for better visibility */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition effect */
+}
+
+
+.tertiary-navbar .auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.tertiary-navbar .login-btn {
+  background-color: white;
+  color: #002855;
+  border: 2px solid #002855;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tertiary-navbar .join-btn {
+  background-color: #002855;
+  color: white;
+  border: 2px solid #002855;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tertiary-navbar .login-btn:hover,
+.tertiary-navbar .join-btn:hover {
+  opacity: 0.9;
+}
