@@ -54,7 +54,7 @@ function CommunityPartners() {
 
     // fetch('http://localhost:8000/api/partners/').then(response => response.json()).then(data => console.log(data))
     //
-    // console.log(mylistings);
+    console.log(mylistings);
 
     const [allPartners, setAllPartners] = useState([]);
     const [dataIsLoading, setDataIsLoading] = useState(true);
@@ -99,7 +99,7 @@ function CommunityPartners() {
             <Grid container spacing={2} sx={{px: 2}}>
                 < Grid item xs={12} md={8}>
                     <Grid container spacing={2}>
-                        {allPartners.map((listing) => (
+                        {mylistings.map((listing) => (
                             <Grid item key={listing.id}>
                                 <StyledCard>
                                     <CardHeader title={listing.name}/>
