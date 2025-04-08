@@ -1,9 +1,9 @@
 const mylistings = [
     {
         id: 1,
-        title: "Community Project 1",
+        name: "Georgia Tech",
         listing_type: "Water based",
-        img_path: '/images/cardimages/img1.jpg',
+        image: '/images/cardimages/img1.jpg',
         description: "This is a description of the community project",
         division: "Midtown Atlanta",
         location: {
@@ -13,9 +13,9 @@ const mylistings = [
     },
     {
         id: 2,
-        title: "Urban Heat Island Study",
+        name: "Urban Heat Island Study",
         listing_type: "Climate Research",
-        img_path: '/images/cardimages/img2.jpg',
+        image: '/images/cardimages/img2.jpg',
         description: "Analyzing the impact of urbanization on temperature variations in Atlanta neighborhoods.",
         division: "Downtown Atlanta",
         location: {
@@ -25,9 +25,9 @@ const mylistings = [
     },
     {
         id: 3,
-        title: "Smart Traffic Management",
+        name: "Smart Traffic Management",
         listing_type: "Transportation",
-        img_path: '/images/cardimages/img3.jpg',
+        image: '/images/cardimages/img3.jpg',
         description: "Developing AI-driven solutions for reducing traffic congestion in Midtown Atlanta.",
         division: "Midtown Atlanta",
         location: {
@@ -37,9 +37,9 @@ const mylistings = [
     },
     {
         id: 4,
-        title: "Water Quality Monitoring",
+        name: "Water Quality Monitoring",
         listing_type: "Water based",
-        img_path: '/images/cardimages/img4.jpg',
+        image: '/images/cardimages/img4.jpg',
         description: "Assessing pollution levels in the Chattahoochee River and its impact on local ecosystems.",
         division: "West Atlanta",
         location: {
@@ -49,9 +49,9 @@ const mylistings = [
     },
     {
         id: 5,
-        title: "Sustainable Urban Farming",
+        name: "Sustainable Urban Farming",
         listing_type: "Agriculture",
-        img_path: '/images/cardimages/img5.jpg',
+        image: '/images/cardimages/img5.jpg',
         description: "Exploring innovative techniques to support urban farming in food deserts.",
         division: "East Atlanta",
         location: {
@@ -61,9 +61,9 @@ const mylistings = [
     },
     {
         id: 6,
-        title: "Cycling Infrastructure Study",
+        name: "Cycling Infrastructure Study",
         listing_type: "Transportation",
-        img_path: '/images/cardimages/img6.jpg',
+        image: '/images/cardimages/img6.jpg',
         description: "Evaluating the effectiveness of bike lanes in promoting sustainable commuting.",
         division: "Virginia Highland",
         location: {
@@ -73,9 +73,9 @@ const mylistings = [
     },
     {
         id: 7,
-        title: "Affordable Housing Solutions",
+        name: "Affordable Housing Solutions",
         listing_type: "Housing",
-        img_path: '/images/cardimages/img7.jpg',
+        image: '/images/cardimages/img7.jpg',
         description: "Investigating strategies to improve access to affordable housing in Atlanta.",
         division: "Old Fourth Ward",
         location: {
@@ -85,9 +85,9 @@ const mylistings = [
     },
     {
         id: 8,
-        title: "Flood Risk Mapping",
+        name: "Flood Risk Mapping",
         listing_type: "Climate Research",
-        img_path: '/images/cardimages/img8.jpg',
+        image: '/images/cardimages/img8.jpg',
         description: "Using GIS data to predict flood-prone areas in metro Atlanta.",
         division: "Peachtree Creek",
         location: {
@@ -97,9 +97,9 @@ const mylistings = [
     },
     {
         id: 9,
-        title: "Electric Vehicle Adoption",
+        name: "Electric Vehicle Adoption",
         listing_type: "Transportation",
-        img_path: '/images/cardimages/img9.jpg',
+        image: '/images/cardimages/img9.jpg',
         description: "Studying the adoption trends of EVs and their infrastructure requirements.",
         division: "Buckhead",
         location: {
@@ -109,9 +109,9 @@ const mylistings = [
     },
     {
         id: 10,
-        title: "Air Quality Analysis",
+        name: "Air Quality Analysis",
         listing_type: "Environmental",
-        img_path: '/images/cardimages/img10.jpg',
+        image: '/images/cardimages/img10.jpg',
         description: "Assessing the effects of air pollution on public health in Atlanta.",
         division: "Downtown Atlanta",
         location: {
@@ -121,9 +121,9 @@ const mylistings = [
     },
     {
         id: 11,
-        title: "Renewable Energy Integration",
+        name: "Renewable Energy Integration",
         listing_type: "Energy",
-        img_path: '/images/cardimages/img11.jpg',
+        image: '/images/cardimages/img11.jpg',
         description: "Exploring solar and wind energy solutions for community buildings.",
         division: "Decatur",
         location: {
@@ -133,9 +133,9 @@ const mylistings = [
     },
     {
         id: 12,
-        title: "Smart Waste Management",
+        name: "Smart Waste Management",
         listing_type: "Sustainability",
-        img_path: '/images/cardimages/img12.jpg',
+        image: '/images/cardimages/img12.jpg',
         description: "Implementing AI-based waste sorting and recycling initiatives in urban areas.",
         division: "Edgewood",
         location: {
@@ -145,9 +145,9 @@ const mylistings = [
     },
     {
         id: 13,
-        title: "AI for Community Safety",
+        name: "AI for Community Safety",
         listing_type: "Security",
-        img_path: '/images/cardimages/img13.jpg',
+        image: '/images/cardimages/img13.jpg',
         description: "Using AI to analyze crime patterns and improve public safety measures.",
         division: "West End",
         location: {
@@ -157,9 +157,9 @@ const mylistings = [
     },
     {
         id: 14,
-        title: "Green Roofs and Urban Cooling",
+        name: "Green Roofs and Urban Cooling",
         listing_type: "Sustainability",
-        img_path: '/images/cardimages/img14.jpg',
+        image: '/images/cardimages/img14.jpg',
         description: "Investigating the benefits of green roofs for reducing urban heat.",
         division: "Poncey-Highland",
         location: {
@@ -169,9 +169,9 @@ const mylistings = [
     },
     {
         id: 15,
-        title: "Public Transit Efficiency",
+        name: "Public Transit Efficiency",
         listing_type: "Transportation",
-        img_path: '/images/cardimages/img15.jpg',
+        image: '/images/cardimages/img15.jpg',
         description: "Analyzing data to optimize bus and rail schedules in Atlanta.",
         division: "East Point",
         location: {
