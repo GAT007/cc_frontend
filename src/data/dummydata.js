@@ -1,11 +1,11 @@
 const mylistings = [
     {
         id: 1,
-        name: "Georgia Tech",
-        listing_type: "Water based",
+        name: "Urban Roots",
+        listing_type: ["Sustainability", "Urban Resilience"],
         image: '/images/cardimages/img1.jpg',
-        description: "This is a description of the community project",
-        division: "Midtown Atlanta",
+        description: "Promoting sustainability and conservation",
+        division: "New York, NY",
         location: {
             type: "Point",
             coordinates: [33.753746, -84.386330]
@@ -13,11 +13,11 @@ const mylistings = [
     },
     {
         id: 2,
-        name: "Urban Heat Island Study",
-        listing_type: "Climate Research",
+        name: "SustainPort",
+        listing_type: ["Local Business", "Economic Growth"],
         image: '/images/cardimages/img2.jpg',
-        description: "Analyzing the impact of urbanization on temperature variations in Atlanta neighborhoods.",
-        division: "Downtown Atlanta",
+        description: "Empowering local businesses and sustainable agriculture",
+        division: "Portland, OR",
         location: {
             type: "Point",
             coordinates: [33.748997, -84.387985]
@@ -25,11 +25,11 @@ const mylistings = [
     },
     {
         id: 3,
-        name: "Smart Traffic Management",
-        listing_type: "Transportation",
+        name: "NextGen Learners",
+        listing_type: ["Child Welfare", "Social Support Systems"],
         image: '/images/cardimages/img3.jpg',
-        description: "Developing AI-driven solutions for reducing traffic congestion in Midtown Atlanta.",
-        division: "Midtown Atlanta",
+        description: "Building brighter futures through education and community support",
+        division: "Atlanta, GA",
         location: {
             type: "Point",
             coordinates: [33.7813, -84.3832]
@@ -37,11 +37,11 @@ const mylistings = [
     },
     {
         id: 4,
-        name: "Water Quality Monitoring",
-        listing_type: "Water based",
+        name: "Food for All",
+        listing_type: ["Local Business", "Community Development"],
         image: '/images/cardimages/img4.jpg',
-        description: "Assessing pollution levels in the Chattahoochee River and its impact on local ecosystems.",
-        division: "West Atlanta",
+        description: "Ensuring food security for everyone",
+        division: "Los Angeles, CA",
         location: {
             type: "Point",
             coordinates: [33.7677, -84.4921]
@@ -49,11 +49,11 @@ const mylistings = [
     },
     {
         id: 5,
-        name: "Sustainable Urban Farming",
-        listing_type: "Agriculture",
+        name: "EngageATL",
+        listing_type: ["Education", "Lifelong Learning"],
         image: '/images/cardimages/img5.jpg',
-        description: "Exploring innovative techniques to support urban farming in food deserts.",
-        division: "East Atlanta",
+        description: "Advocating for equity and civic responsibility",
+        division: "Chicago, IL",
         location: {
             type: "Point",
             coordinates: [33.7450, -84.3483]
@@ -61,11 +61,11 @@ const mylistings = [
     },
     {
         id: 6,
-        name: "Cycling Infrastructure Study",
-        listing_type: "Transportation",
+        name: "NextGen Biz",
+        listing_type: ["Local Business", "Entrepreneurship"],
         image: '/images/cardimages/img6.jpg',
-        description: "Evaluating the effectiveness of bike lanes in promoting sustainable commuting.",
-        division: "Virginia Highland",
+        description: "Fostering Innovation and small business",
+        division: "Houston, TX",
         location: {
             type: "Point",
             coordinates: [33.7804, -84.3656]
@@ -74,10 +74,10 @@ const mylistings = [
     {
         id: 7,
         name: "Affordable Housing Solutions",
-        listing_type: "Housing",
+        listing_type: ["Education", "Workforce Development"],
         image: '/images/cardimages/img7.jpg',
         description: "Investigating strategies to improve access to affordable housing in Atlanta.",
-        division: "Old Fourth Ward",
+        division: "Phoenix, AZ",
         location: {
             type: "Point",
             coordinates: [33.7561, -84.3733]
@@ -86,10 +86,10 @@ const mylistings = [
     {
         id: 8,
         name: "Flood Risk Mapping",
-        listing_type: "Climate Research",
+        listing_type: ["Local Business", "Sustainable Growth"],
         image: '/images/cardimages/img8.jpg',
         description: "Using GIS data to predict flood-prone areas in metro Atlanta.",
-        division: "Peachtree Creek",
+        division: "Philadelphia, PA",
         location: {
             type: "Point",
             coordinates: [33.8121, -84.3911]
@@ -98,10 +98,10 @@ const mylistings = [
     {
         id: 9,
         name: "Electric Vehicle Adoption",
-        listing_type: "Transportation",
+        listing_type: ["Local Business", "Sustainable Growth"],
         image: '/images/cardimages/img9.jpg',
         description: "Studying the adoption trends of EVs and their infrastructure requirements.",
-        division: "Buckhead",
+        division: "San Antonio, TX",
         location: {
             type: "Point",
             coordinates: [33.8454, -84.3684]
@@ -110,10 +110,10 @@ const mylistings = [
     {
         id: 10,
         name: "Air Quality Analysis",
-        listing_type: "Environmental",
+        listing_type: ["Education", "Workforce Development"],
         image: '/images/cardimages/img10.jpg',
         description: "Assessing the effects of air pollution on public health in Atlanta.",
-        division: "Downtown Atlanta",
+        division: "San Antonio, TX",
         location: {
             type: "Point",
             coordinates: [33.7490, -84.3880]
@@ -122,10 +122,10 @@ const mylistings = [
     {
         id: 11,
         name: "Renewable Energy Integration",
-        listing_type: "Energy",
+        listing_type: ["Education", "Workforce Development"],
         image: '/images/cardimages/img11.jpg',
         description: "Exploring solar and wind energy solutions for community buildings.",
-        division: "Decatur",
+        division: "Dallas, TX",
         location: {
             type: "Point",
             coordinates: [33.7748, -84.2963]
@@ -134,10 +134,10 @@ const mylistings = [
     {
         id: 12,
         name: "Smart Waste Management",
-        listing_type: "Sustainability",
+        listing_type: ["Local Business", "Sustainable Growth"],
         image: '/images/cardimages/img12.jpg',
         description: "Implementing AI-based waste sorting and recycling initiatives in urban areas.",
-        division: "Edgewood",
+        division: "San Jose, CA",
         location: {
             type: "Point",
             coordinates: [33.7505, -84.3493]
@@ -146,10 +146,10 @@ const mylistings = [
     {
         id: 13,
         name: "AI for Community Safety",
-        listing_type: "Security",
+        listing_type: ["Local Business", "Sustainable Growth"],
         image: '/images/cardimages/img13.jpg',
         description: "Using AI to analyze crime patterns and improve public safety measures.",
-        division: "West End",
+        division: "Austin, TX",
         location: {
             type: "Point",
             coordinates: [33.7355, -84.4121]
@@ -158,10 +158,10 @@ const mylistings = [
     {
         id: 14,
         name: "Green Roofs and Urban Cooling",
-        listing_type: "Sustainability",
+        listing_type: ["Local Business", "Sustainable Growth"],
         image: '/images/cardimages/img14.jpg',
         description: "Investigating the benefits of green roofs for reducing urban heat.",
-        division: "Poncey-Highland",
+        division: "Jacksonville, FL",
         location: {
             type: "Point",
             coordinates: [33.7722, -84.3559]
@@ -170,10 +170,10 @@ const mylistings = [
     {
         id: 15,
         name: "Public Transit Efficiency",
-        listing_type: "Transportation",
+        listing_type: ["Local Business", "Sustainable Growth"],
         image: '/images/cardimages/img15.jpg',
         description: "Analyzing data to optimize bus and rail schedules in Atlanta.",
-        division: "East Point",
+        division: "Fort Worth, TX",
         location: {
             type: "Point",
             coordinates: [33.6793, -84.4394]

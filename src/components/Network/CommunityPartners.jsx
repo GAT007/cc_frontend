@@ -16,6 +16,7 @@ import {
     CircularProgress,
 } from '@mui/material';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 
 // Leaflet Imports
 import {MapContainer, TileLayer, Marker, Popup} from "react-leaflet";
@@ -33,7 +34,7 @@ const StyledCard = styled(Card)(() => ({
     border: '1px solid #ccc',
     borderRadius: '8px',
     margin: '10px',
-    width: '282px', // Updated width
+    width: '240px', // Updated width
     height: '402px', // Updated height
     display: 'flex',
     flexDirection: 'column',
@@ -107,13 +108,36 @@ function CommunityPartners() {
                                         }}>{listing.name.substring(0, 50)}</Typography>
                                         <Typography variant="body2"
                                                     sx={{fontSize: '0.875rem', textAlign: 'left', color: 'gray'}}>
-                                            {listing.description.substring(0, 300)}
+                                            {listing.description.substring(0, 100)}
                                         </Typography>
                                         <Grid container alignItems="center" sx={{mt: 1}}>
                                             <IconButton size="small" sx={{padding: 0}}>
-                                                <i className="bi bi-geo-alt-fill"
-                                                   style={{fontSize: '16px'}}></i> {/* Bootstrap icon */}
+                                                <LocationOnOutlinedIcon fontSize="small"/>
                                             </IconButton>
+                                            <Typography variant="body2"
+                                                        sx={{fontSize: '0.75rem', textAlign: 'left', color: 'black'}}>
+                                                {listing.division} {/* Assuming location is part of your listing data */}
+                                            </Typography>
+                                        </Grid>
+                                        {/* Gray box with pill boxes */}
+                                        <Grid container spacing={1}
+                                              sx={{mt: 2, padding: 1, backgroundColor: '#f0f0f0', borderRadius: 1}}>
+                                            {listing.listing_type.map((type, index) => (
+                                                <Grid item key={index}>
+                                                    <Typography
+                                                        sx={{
+                                                            backgroundColor: '#e0e0e0',
+                                                            padding: '5px 10px',
+                                                            borderRadius: '20px',
+                                                            fontSize: '0.75rem',
+                                                            color: '#333',
+                                                            display: 'inline-block'
+                                                        }}
+                                                    >
+                                                        {type}
+                                                    </Typography>
+                                                </Grid>
+                                            ))}
                                         </Grid>
                                     </CardContent>
                                 </StyledCard>
@@ -123,18 +147,21 @@ function CommunityPartners() {
                 </Grid>
                 <Grid item xs={12} md={4} style={{marginTop: "0.5rem"}}>
                     <AppBar position="sticky">
-                        <MapContainer center={[33.753746, -84.386330]} zoom={13} scrollWheelZoom={false}
-                                      style={{height: "500px", width: "100%"}}>
-                            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
-                            {mylistings.map((listing) => (
-                                <Marker key={listing.id} icon={communityIcon} position={listing.location.coordinates}>
-                                    <Popup>
-                                        <Typography variant="h5">{listing.title}</Typography>
-                                        <Typography variant="body1">{listing.description}</Typography>
-                                    </Popup>
-                                </Marker>
-                            ))}
-                        </MapContainer>
+                        <div style={{height: '500px', width: '100%'}}>
+                            <MapContainer center={[33.753746, -84.386330]} zoom={13} scrollWheelZoom={false}
+                                          style={{height: '100%', width: '100%'}}>
+                                <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
+                                {mylistings.map((listing) => (
+                                    <Marker key={listing.id} icon={communityIcon}
+                                            position={listing.location.coordinates}>
+                                        <Popup>
+                                            <Typography variant="h5">{listing.title}</Typography>
+                                            <Typography variant="body1">{listing.description}</Typography>
+                                        </Popup>
+                                    </Marker>
+                                ))}
+                            </MapContainer>
+                        </div>
                     </AppBar>
                 </Grid>
             </Grid>
