@@ -64,7 +64,7 @@ function CommunityPartners() {
 
         async function GetAllListings() {
             try {
-                const response = await Axios.get('http://localhost:8000/api/partners/', {cancelToken: source.token});
+                const response = await Axios.get('http://159.65.39.33/api/partners', {cancelToken: source.token});
                 console.log(response.data);
                 setAllPartners(response.data);
                 setDataIsLoading(false);
